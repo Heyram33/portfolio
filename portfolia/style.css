@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    letter-spacing: 2px;
+    width: 100%;
+    position: sticky !important;
+    top: 0;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    
+}
+.navbar-brand{
+    font-weight: 600;
+}
+.nav-link{
+    color: white !important;
+}
+.nav-link:hover{
+    border-bottom: 1px solid white;
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+}
+#home{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(223, 17, 17,0.1),rgba(0,0,0,0.1)),url("https://wallpapercave.com/wp/wp7368071.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white
+}
+#home p{
+    position: absolute;
+    font-size: 100px;
+    opacity: 0;
+    animation: text 3s ease-in-out;
+}
+#home span{
+    color:black;
+}
+#home p:nth-child(1){
+    animation-delay: 0s;
+}
+#home p:nth-child(2){
+    animation-delay: 3s;
+}
+#home p:nth-child(3){
+    animation-delay: 6s;
+}
+@media screen and (max-width:576px){
+    #home p{
+        font-size: 65px;
+    }
+}
+@keyframes text{
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-image: linear-gradient(rgb(26, 236, 26,0.3),rgb(247, 20, 20,0.9));*/
+    background-color: white;
+    color: aliceblue;
+}
+.circle{
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    border-radius: 50%; 
+    position: relative;
+    box-shadow: 0px 5px 12px  ;
+    transition: 1s;
+}
+.circle img{
+    position: absolute;
+    height: 400px;
+    bottom: 4%;
+    left:5%;
+    filter: drop-shadow(0px 8px 10px rgb(240, 235, 235));
+    transition: 1s;
+}
+.circle:hover{
+    width: 700px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.circle:hover img{
+    position: absolute;
+    left:0%;
+    transition: 1s;
+}
+.circle .content{
+    opacity: 0;
+    padding: 10px;
+}
+.circle:hover .content{
+    position: absolute;
+    top: 20%;
+    right: 0%;
+    width: 50%;
+    opacity: 1;
+    transition: 3s;
+}
+@media screen and (max-width:576px) {
+    .circle{
+        width: 300px;
+        height: 300px;
+        background-color: black;
+        border-radius: 50%; 
+        position: relative;
+        box-shadow: 0px 5px 12px rgb(240, 235, 235,0.7) ;
+        transition: 1s;
+    }
+    .circle img{
+        position: absolute;
+        height: 300px;
+        top: 0%;
+        filter: drop-shadow(0px 8px 10px rgb(240, 235, 235));
+        transition: 1s;
+    }
+    .circle:hover{
+        width: 400px;
+        height: 500px;
+        border-radius: 10px;
+        transition: 1s;
+    }
+    .circle:hover img{
+        position: absolute;
+        top: 0%;
+        left: 15%;
+        transition: 1s;
+    }
+    .circle .content{
+        opacity: 0;
+        
+    }
+    .circle:hover .content{
+        position: absolute;
+        padding-bottom: 5%;
+        top: 58%;
+        width: 100%;     
+        transition: 6s;   
+        opacity: 1;
+        
+    }    
+}
+
+#skills{
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+label{
+    font-size: large;
+}
+.progress{
+    height: 30px !important;
+    border-radius: 5px !important; 
+}
+.progress:hover{
+    box-shadow: 2px 2px 5px rgb(255, 255, 255,0.7),-2px -2px 5px rgb(255, 255, 255,0.7) ;
+}
+
+#project{
+    padding-top: 4%;
+}
+#proj{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+}
+.carousel{
+    width: 80%;
+    height: 80vh;
+    background-color:rgb(255, 255, 255,0.4);
+    border-radius: 5px;
+    box-shadow: 1px 10px 15px rgb(255, 255, 255,0.4);
+}
+iframe{
+    width: 100%;
+    height: 80vh;
+}
+
+@media screen and (max-width:576px) {
+    .carousel{
+        margin-top: 7%;
+        width: 80%;
+        height: 50vh;
+        background-color: rgb(255, 255, 255,0.4);
+        border-radius: 5px;
+        box-shadow: 1px 8px 10px rgb(255, 255, 255,0.4);
+    }
+    iframe{
+        width: 100%;
+        height: 50vh;
+    }
+    
+}
+
+#pricing{
+    padding-top: 6%;
+}
+.card{
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+.card:hover{
+    box-shadow:8px 2px 15px rgb(255, 255, 255,0.4);
+}
+
+#contact{
+    padding-top: 5%;
+}
+
+#contact iframe{
+    box-shadow: 1px 8px 10px rgb(255, 255, 255,0.4);
+}
