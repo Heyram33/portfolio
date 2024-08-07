@@ -23,7 +23,7 @@ header ul li{
 }
  
 .mobile-nav li{
-    @apply w-full h-full text-center border-b-2 border-[#292929];
+    @apply w-full h-full text-center border-b-2 border-[#292929] mt-1;
 }
 
 .btn{
