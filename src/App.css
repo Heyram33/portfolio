@@ -19,13 +19,13 @@ header ul li{
 }
 
 .mobile-nav{
-    @apply fixed top-12 left-0 bg-[#686868] w-full h-1/3;
+    @apply fixed top-12 left-0 bg-[#3E362E] w-full h-1/4;
 }
  
 .mobile-nav li{
-    @apply w-full h-full text-center pt-2 border-b-2;
+    @apply w-full h-full text-center border-b-2 border-[#292929];
 }
 
 .btn{
-    @apply bg-blue-800 px-5 py-2 font-bold mx-3 rounded;
+    @apply bg-blue-800 px-5 py-2 font-bold mx-5  rounded;
 }

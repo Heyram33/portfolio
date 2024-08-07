@@ -14,7 +14,7 @@ export default function Header(){
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        {toggleMenu && <nav className="block md:hidden text-2xl">
+        {toggleMenu && <nav className="block md:hidden text-xl">
             <ul onClick={()=>setToggleMenu(!toggleMenu)} className="flex flex-col text-white mobile-nav">
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>

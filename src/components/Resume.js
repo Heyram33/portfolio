@@ -8,7 +8,10 @@ export default function About(){
         </div>
         <div className=" md:w-1/2 flex flex-col justify-center items-center md:items-start mx-5 py-5">
             <h1 className='text-2xl md:text-4xl text-white border-b-4 border-[#3E362E] mb-5 w-[130px] font-bold text-center '>Resume</h1>
-            <p className='text-white text-lg md:text-xl'>You can view my resume <a className='btn' href={Resume} download>Download</a></p>
+            <div className="md:flex text-center">
+            <p className='text-white text-lg md:text-xl text-center md:text-start mb-5 md:mb-0'>You can view my resume </p>
+            <a className='btn' href={Resume} download>Download</a>
+            </div>
         </div>
     </section>
 }
